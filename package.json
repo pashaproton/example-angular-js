@@ -1,0 +1,32 @@
+{
+  "name": "example-angular-js",
+  "version": "0.0.1",
+  "description": "Example project",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "./node_modules/.bin/lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pashaproton/example-angular-js.git"
+  },
+  "keywords": [
+    "example",
+    "angular"
+  ],
+  "author": "Pavlo Ivanichenko <pasha.proton@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pashaproton/example-angular-js/issues"
+  },
+  "homepage": "https://github.com/pashaproton/example-angular-js#readme",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-storage": "0.0.13",
+    "angular-ui-router": "^0.2.18",
+    "materialize-css": "^0.97.5"
+  },
+  "devDependencies": {
+    "lite-server": "^2.1.0"
+  }
+}
