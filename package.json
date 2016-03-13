@@ -4,7 +4,9 @@
   "description": "Example project",
   "scripts": {
     "prestart": "npm install",
-    "start": "./node_modules/.bin/lite-server"
+    "start": "./node_modules/.bin/lite-server",
+    "pretest": "npm install",
+    "test": "./node_modules/.bin/karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,12 @@
   "homepage": "https://github.com/pashaproton/example-angular-js#readme",
   "dependencies": {},
   "devDependencies": {
-    "lite-server": "^2.1.0"
+    "bower": "^1.7.7",
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-jasmine": "^0.3.7",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "lite-server": "^2.1.0",
+    "phantomjs-prebuilt": "^2.1.5"
   }
 }
