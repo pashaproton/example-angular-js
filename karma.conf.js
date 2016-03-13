@@ -19,8 +19,14 @@ module.exports = function(config) {
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/a0-angular-storage/dist/angular-storage.min.js',
       'bower_components/angular-ui-router/release/angular-ui-router.min.js',
+      
+      // Services
       'app/services/store-items.service.js',
-      'app/services/store-items.service.spec.js'
+      'app/services/store-items.service.spec.js',
+      
+      // Factories
+      'app/factories/todo-item.factory.js',
+      'app/factories/todo-item.factory.spec.js'
     ],
 
 
