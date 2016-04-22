@@ -26,7 +26,12 @@ module.exports = function(config) {
       
       // Factories
       'app/factories/todo-item.factory.js',
-      'app/factories/todo-item.factory.spec.js'
+      'app/factories/todo-item.factory.spec.js',
+
+      // Directives
+      'app/directives/todo-form/todo-form.js',
+      'app/directives/todo-form/todo-form.html',
+      'app/directives/todo-form/todo-form.spec.js'
     ],
 
 
@@ -38,6 +43,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'app/directives/**/*.html': ['ng-html2js']
     },
 
 
@@ -63,7 +69,7 @@ module.exports = function(config) {
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: true,
 
-    plugins: ['karma-jasmine', 'karma-phantomjs-launcher'],
+    plugins: ['karma-jasmine', 'karma-phantomjs-launcher', 'karma-ng-html2js-preprocessor'],
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
